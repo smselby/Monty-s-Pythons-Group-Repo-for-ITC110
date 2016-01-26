@@ -1,0 +1,11 @@
+def joke():
+    while True:
+        print('knock,knock')
+        answer = input()
+        if answer != 'Who\'s there?':
+            continue
+        print('Ya.')
+        response = input()
+        print('Wow. You sure are glad to see me!')
+
+joke()
