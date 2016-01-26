@@ -1,0 +1,16 @@
+from time import sleep
+import sys
+
+
+def joke():
+
+    while True:
+        print('Knock knock.')
+        answer = input()
+        if answer != 'Who\'s there?':
+            continue
+        print('Interrupting clam.')
+        sleep(3)
+        print('SquirtSquirt')
+        sys.exit()
+joke() 
