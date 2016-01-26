@@ -1,0 +1,10 @@
+while True:
+    print('Knock, knock')
+    answer = input()
+    if answer != 'Who\'s there?':
+        continue
+    print ('Luke')
+    answer = input()
+    if answer == 'Luke who?':
+        break
+print('Luke through the peep hole and find out.')
