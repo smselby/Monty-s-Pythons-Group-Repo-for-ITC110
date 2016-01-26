@@ -1,0 +1,7 @@
+def joke():
+   print('knock,knock')
+joke()
+response = input()
+print('Klingon.')
+response = input()
+print('Klingon to the airlock or you will fly out of the ship!')
