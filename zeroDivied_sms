@@ -1,0 +1,24 @@
+print('local try & except')
+
+def spam(dividedBy):
+    try:
+        return 42 / dividedBy
+    except ZeroDivisionError: #Here the try & execept are local so there is a return for each spam print in global.
+        print('Error: Invalid argument')
+print(spam(2))
+print(spam(12))
+print(spam(0))
+print(spam(1))
+
+print('global try & except')
+
+def spam(dividedBy): #Here the try & execept are global so there is a return for local spam 2 & 12 then error print.
+    return 42 / dividedBy
+   
+try:
+    print(spam(2))
+    print(spam(12))
+    print(spam(0))
+    print(spam(1))
+except ZeroDivisionError:
+    print('Error: Invalid argument')
